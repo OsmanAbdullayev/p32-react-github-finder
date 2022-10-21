@@ -9,10 +9,10 @@ class Header extends Component {
 			<header>
 				<nav className="navbar bg-dark">
 					<div className="container-fluid">
-						<p className="navbar-brand d-flex align-items-center justify-content-center m-0" href="#">
+						<a className="navbar-brand d-flex align-items-center justify-content-center m-0" href={this.props.url} target="_blank" rel="noreferrer">
 						<i className="fa-brands fa-github text-light display-5"></i>
-						<h2 className="text-light ps-2 m-0">GitHub</h2>
-						</p>
+						<p className="text-light ps-2 m-0">{this.props.title}</p>
+						</a>
 					</div>
 				</nav>
 			</header>
